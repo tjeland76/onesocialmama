@@ -25,7 +25,7 @@ export default {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-        new ExtractTextPlugin({filename: 'public/style.css', allChunks: true})
+        new ExtractTextPlugin({filename: 'public/styles.css', allChunks: true})
     ],
     node: {
         fs: 'empty',
