@@ -20,28 +20,25 @@ class HomeBody extends React.Component {
       <div className="bodyHome">
         <div className="bodyHomeContainer">
           <div className="homePanel">
-            <h1>Be the best you can be...</h1>
-            <h4>We provide the following services:</h4>
+            <h1>Be the best you can be.</h1>
+            <h4>OneSocialMama provides the following services:</h4>
             <NavLink to="/services/">
             <div id="servicesGrid">
               <div>
                 <div>
-                  <div className="gridIcon socialMediaManagement"><span>Social Media Management</span></div>
-                </div>
-                <div>
-                  <div className="gridIcon training"><span>Training & 121s</span></div>
-                </div>
-
-              </div>
-
-              <div>
-                <div>
-                  <div className="gridIcon strategy"><span>Strategy</span></div>
-                </div>
-                <div>
                   <div className="gridIcon audit"><span>Audit</span></div>
                 </div>
-
+                <div>
+                  <div className="gridIcon strategy"><span>Strategy Development</span></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div className="gridIcon training"><span>Workshops & 121s</span></div>
+                </div>
+                <div>
+                  <div className="gridIcon socialMediaManagement"><span>Social Media Management</span></div>
+                </div>
               </div>
             </div>
             </NavLink>

@@ -10,6 +10,10 @@ const navData = [
   {
     title: 'Services',
     route: '/services'
+  },
+  {
+    title: 'Get in touch',
+    route: '/contact'
   }
   // ,
   // {

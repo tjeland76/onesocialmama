@@ -80,7 +80,7 @@ class ContactUsPage extends React.Component {
 
     return (
       <div className="container contactUs">
-        <h2>Contact Us</h2>
+        <h2>Get in touch</h2>
         <MediaLinks mediaLinksData={findUsOnLinks} type="mediaLinks"/>
 
         <Form model="user" onSubmit={(user) => this.handleSubmit(user)} className="form-horizontal" name="contactForm">

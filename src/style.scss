@@ -13,6 +13,7 @@ $base-font-weight: 300;
 $header-top-height:75px;
 $header-top-height-small:55px;
 $header-media-links-height:50px;
+$mobile-logo-width:200px;
 $logo-width:414px;
 $logo-width-small:303px;
 $paragraph-height:26pt;
@@ -22,6 +23,11 @@ $desktop-home-new-item-width:260px;
 $mobile-home-new-item-height:auto;
 $mobile-home-new-item-width:100%;
 $desktop-home-new-item-lines-limit:4;
+$linen: #d1d3cf;
+$raisin: #757081;
+$lavender: #6b82a8;
+$grape:#6c4f70;
+$black-cherry:#39324b;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -59,11 +65,11 @@ input[type=text], textarea.form-control {
 
 #logo {
   border:solid 0px #000;
-  width:$logo-width-small;
+  width:$mobile-logo-width;
   height:$header-top-height-small;
   background-image: url("images/One Social Mama transparent logo.png");
   background-repeat:no-repeat;
-  background-size:auto $header-top-height-small;
+  background-size: $mobile-logo-width 55px;
   margin:auto
 }
 
@@ -72,7 +78,7 @@ input[type=text], textarea.form-control {
   min-height:735px;
   position:relative;
   &:before {
-    background-image: url("images/laptop-bw.png");
+    background-image: url("images/marbury landscape.jpg");
     opacity: 0.7;
     position: absolute;
     content: ' ';
@@ -93,12 +99,13 @@ input[type=text], textarea.form-control {
 
   .bodyHomeContainer {
     min-height:400px;
+    padding: 20px 0;
     .homePanel {
       color:#fff;
       position: relative;
       margin: auto;
       text-align: center;
-      top: 30px;
+      top: 0;
       width: 90%;
       background: rgb(000, 000, 000); /* Fallback for older browsers without RGBA-support */
       background: rgba(000, 000, 000, 0.65);
@@ -108,17 +115,18 @@ input[type=text], textarea.form-control {
   }
 }
 #servicesGrid {
-  width: 100%;
-  display:table;
-  border-spacing: 0px 30px;
-  margin: auto;
-  cursor:pointer;
-  > div {
-    display:table-row;
+    width: 100%;
+    display:table;
+    border-spacing: 0px 30px;
+    margin: auto;
+    cursor:pointer;
+    > div {
+    display:block;
 
     > div {
-      display:table-cell;
+      display:block;
       height: 200px;
+      margin-bottom: 25px;
       > div {
         &.gridIcon {
           margin: auto;
@@ -171,13 +179,49 @@ main {
   }
 }
 
+.emilyPic {
+  display:none;
+  background-image: url("images/emily.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.homeBanner {
+  background-color: $black-cherry;
+  height: 200px;
+  .container {
+    display: table;
+    height: 200px;
+    > div {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      .bannerLabel {
+        color:$linen;
+        margin-top: 5px;
+      }
+      .mediaLinks {
+        display:table;
+        width:225px;
+        margin-top: 20px;
+        a {
+          width:50px;
+          height:50px;
+          background-size:100% 100%;
+        }
+      }
+    }
+  }
+}
+
 .header {
   .headerTop {
     background-color:$header-color;
     position:relative;
   }
   .navContainer {
-    background-color: #6B82A8;
+    background-color: $linen;
     position:absolute;
     z-index:99;
     width:100%;
@@ -239,7 +283,8 @@ main {
       background-image:url("images/googleplus.png");
     }
     a.instagram {
-      background-image:url("images/instagram.png");
+      background-image:url("images/instagram-logo.png");
+      background-size: 115% 115% !important;
     }
     a.pininterest {
       background-image:url("images/facebook.png");
@@ -267,7 +312,7 @@ main {
 nav {
     text-align:left;
     a {
-      color: $nav-link-color;
+      color: $black-cherry;
       display: block;
       font-weight:400;
       padding: 0 25px;
@@ -276,13 +321,13 @@ nav {
       height:64px;
       line-height:64px;
       &:hover {
-        color:$nav-link-color;
+        color:$black-cherry;
         text-decoration:none;
         border-bottom: solid 5px #6C4F70;
       }
     }
     a.active {
-        color:$nav-link-color;
+        color:$black-cherry;
         text-decoration:none;
         border-bottom: solid 5px #6C4F70;
     }
@@ -466,6 +511,17 @@ nav {
     padding-bottom: 5px;
   }
 
+  #servicesGrid {
+    display: table;
+    > div {
+      display: table-row;
+      > div {
+        display: table-cell;
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .header {
 
     .menuContainer {
@@ -497,13 +553,27 @@ nav {
       display:inline-block;
       height:44px;
       line-height:44px;
-      color:$nav-link-color;
     }
   }
 
   .contactUs {
     form {
       width: 60%;
+    }
+  }
+
+  .emilyPic {
+    display:block;
+    float:left;
+    width:30%;
+    height:500px;
+  }
+
+  .aboutText {
+    float:right;
+    width:70%;
+    p {
+      padding-left:15px;
     }
   }
 
@@ -533,17 +603,31 @@ nav {
 
   #logo {
     height:$header-top-height;
-    background-size:auto $header-top-height;
+    background-size: 100%;
     width:$logo-width;
+    &:after {
+      content: "";
+      background-image:url("images/mama.png");
+      margin-top: 8px;
+      margin-right: -48px;
+      background-size: 100% 100%;
+      float: right;
+      display: block;
+      width: 43px;
+      height:56px;
+      content: "";
+    }
   }
 
   .bodyHome {
     min-height:735px;
     .bodyHomeContainer {
       min-height:400px;
+      padding: 0;
       .homePanel {
-        top: 60px;
+        top: 30px;
         width: 60%;
+        min-width: 720px;
       }
     }
   }

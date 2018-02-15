@@ -34,20 +34,21 @@ const mediaLinksData = [
 
 const findUsOnLinks = [
   {
+    title: 'Instagram',
+    class: 'instagram',
+    route: 'https://www.instagram.com/onesocialmama/'
+  },
+  {
     title: 'Facebook',
     class: 'facebook',
-    route: 'https://www.facebook.com/'
+    route: 'https://www.facebook.com/mamacansocial/'
   },
   {
     title: 'Twitter',
     class: 'twitter',
-    route: 'https://twitter.com/'
-  },
-  {
-    title: 'Instagram',
-    class: 'instagram',
-    route: 'https://twitter.com/'
+    route: 'https://twitter.com/Onesocialmama'
   }
+
 
 ];
 
