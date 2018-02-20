@@ -70,7 +70,19 @@ input[type=text], textarea.form-control {
   background-image: url("images/One Social Mama transparent logo.png");
   background-repeat:no-repeat;
   background-size: $mobile-logo-width 55px;
-  margin:auto
+  margin:auto;
+  &:after {
+    content: "";
+    background-image:url("images/mama.png");
+    margin-top: 8px;
+    margin-right: -48px;
+    background-size: 100% 100%;
+    float: right;
+    display: block;
+    width: 30px;
+    height:42px;
+    content: "";
+  }
 }
 
 .bodyHome {
@@ -119,22 +131,23 @@ input[type=text], textarea.form-control {
     display:table;
     border-spacing: 0px 30px;
     margin: auto;
-    cursor:pointer;
+
     > div {
     display:block;
 
-    > div {
+    > .service {
       display:block;
-      height: 200px;
+      height: 150px;
       margin-bottom: 25px;
+      cursor:pointer;
       > div {
         &.gridIcon {
           margin: auto;
-          width: 70%;
-          height: 200px;
+          width: 100%;
+          height: 150px;
           position: relative;
           text-align: center;
-          background-position: center center;
+          background-position: center 24px;
           background-repeat: no-repeat;
           background-color:#fff;
           border-radius:10px;
@@ -142,20 +155,20 @@ input[type=text], textarea.form-control {
 
           &.socialMediaManagement {
             background-image: url("images/manane social media trans.png");
-            background-size: 117px auto;
+            background-size: 75px auto;
           }
           &.training {
             background-image: url("images/training transpr.png");
-            background-size: 148px auto;
+            background-size: 90px auto;
 
           }
           &.strategy {
             background-image: url("images/strategy icon transparent.png");
-            background-size: 115px auto;
+            background-size: 74px auto;
           }
           &.audit {
             background-image: url("images/audit transparent.png");
-            background-size: 80px auto;
+            background-size: 50px auto;
           }
           > span {
             width: 100%;
@@ -515,9 +528,28 @@ nav {
     display: table;
     > div {
       display: table-row;
-      > div {
+      > .service {
         display: table-cell;
+        height:200px;
         margin-bottom: 0;
+        > div {
+          &.gridIcon {
+            height: 200px;
+            width: 70%;
+            &.socialMediaManagement {
+              background-size: 117px auto;
+            }
+            &.training {
+              background-size: 148px auto;
+            }
+            &.strategy {
+              background-size: 115px auto;
+            }
+            &.audit {
+              background-size: 80px auto;
+            }
+          }
+        }
       }
     }
   }
@@ -606,16 +638,8 @@ nav {
     background-size: 100%;
     width:$logo-width;
     &:after {
-      content: "";
-      background-image:url("images/mama.png");
-      margin-top: 8px;
-      margin-right: -48px;
-      background-size: 100% 100%;
-      float: right;
-      display: block;
       width: 43px;
       height:56px;
-      content: "";
     }
   }
 

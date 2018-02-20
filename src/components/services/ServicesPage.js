@@ -9,10 +9,12 @@ class ServicesPage extends React.Component {
         <p>From audits and light touch support and guidance, full social media strategy and management, and bespoke training to suit your needs, we can tailor our packages to suit your individual needs.</p>
         <p>Our core packages are detailed below:</p>
 
+        <a name="audit"></a>
         <h3>Audit</h3>
         <p>For small to medium sized businesses who would benefit from a review on how they can improve their social media channels, and confirm areas which are performing well versus those that need improvements. This would include both a platform review, including brand, tone, content, successes and improvement areas; and an analytics review showing which posts are both engaging and value add, and why.</p>
         <p>This insight gives you a great view of what is working well, and what isn’t working as well, to help you build your brand strategy and improve your performance.</p>
 
+        <a name="strategy"></a>
         <h3>Strategy Development</h3>
 
         <p>This can be hugely beneficial for those seeking some guidance on running their social media channels, and maximising their effectiveness. We will work with you to develop a strategy to align the focus of the business and its objectives across social media channels.</p>

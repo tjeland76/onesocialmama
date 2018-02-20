@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import config from './config';
 
 const transporter =  nodemailer.createTransport({
-  host: "smtp-mail.outlook.com", // hostname
+  host: config.host, // hostname
   secureConnection: false, // TLS requires secureConnection to be false
   port: 587, // port for secure SMTP
   tls: {
