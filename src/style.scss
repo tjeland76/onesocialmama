@@ -170,6 +170,14 @@ input[type=text], textarea.form-control {
             background-image: url("images/audit transparent.png");
             background-size: 50px auto;
           }
+          &.cv {
+            background-image: url("images/cv transparent.png");
+            background-size: 58px auto;
+          }
+          &.flexible {
+            background-image: url("images/balance.png");
+            background-size: 78px auto;
+          }
           > span {
             width: 100%;
             position: absolute;
@@ -548,6 +556,12 @@ nav {
             &.audit {
               background-size: 80px auto;
             }
+            &.cv {
+              background-size: 94px auto;
+            }
+            &.flexible {
+              background-size: 132px auto;
+            }
           }
         }
       }
@@ -644,7 +658,7 @@ nav {
   }
 
   .bodyHome {
-    min-height:735px;
+    min-height:950px;
     .bodyHomeContainer {
       min-height:400px;
       padding: 0;

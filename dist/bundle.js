@@ -45066,40 +45066,70 @@ var AboutUsPage = function (_React$Component) {
             _react2.default.createElement(
               "p",
               null,
-              "One Social Mama is a social media consultancy founded and directed by Emily Eland. Emily lives and works in Cuddington, Cheshire and has a background in HR and Social Media. Emily is a huge advocate of all things social and has gained a qualification in strategic social media management with Digital Mums."
+              "One Social Mama is a Social Media and HR consultancy founded and directed by Emily Eland. Emily lives and works in Cuddington, Cheshire and has a background in HR and Social Media."
             ),
             _react2.default.createElement(
               "p",
               null,
-              "Emily is passionate about supporting small to medium sized businesses to make the absolute most of themselves and achieving the very best they can maximising their social media presence."
+              "Emily has worked in HR for over 15 years having gained a Psychology and Business Management BA Hons Degree (Leeds University), and a Certificate in Personnel and Development (Leeds Metropolitan University)."
             ),
             _react2.default.createElement(
               "p",
               null,
-              "Emily is also a huge advocate of helping mums back into work, and runs a blog called ",
+              "After having some time out of HR, following the birth of her 3 children, Emily has retrained and followed a passion of hers in terms of social media and gained a qualification in Strategic Social Media Management with Digital Mums."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "After becoming a mum Emily became increasingly aware of the difficulties of finding flexible work around her children, which is the fundamental vision which Digital Mums is based upon. Co Founders Kathyrn Tyler and and Nikki Cochrane have one big goal which is to help every mum to achieve their work life balance, something they call #workthatworks. Digital mums want to change the way flexible work is seen, and to help drive government policy and cultural shifts in this area to help mums back into work."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Emily is a huge advocate of helping mums back into work, and runs a blog called ",
               _react2.default.createElement(
                 "a",
                 { href: "https://fleximamablog.wordpress.com/", target: "window" },
                 "Fleximama"
               ),
-              ".  Fleximama encourages and supports mums back into work, and helps them find flexible work.  This initiative was founded by the Digital Mums #workthatworks campaign, in a bid to get the government to make changes to current legislative policies.  Do get in touch if this is something of interest to you."
-            ),
-            _react2.default.createElement(
-              "p",
-              null,
-              "You can follow fleximama on ",
+              ". Fleximama encourages and supports mums back into work, supporting them in their quest to find flexible work that fits around their families. You can follow fleximama on ",
               _react2.default.createElement(
                 "a",
-                { href: "https://twitter.com/Onesocialmama", target: "window" },
+                { href: "https://twitter.com/mamacanflex", target: "window" },
                 "Twitter"
               ),
               " and ",
               _react2.default.createElement(
                 "a",
-                { href: "https://www.facebook.com/mamacansocial/", target: "window" },
+                { href: "https://www.facebook.com/mamacanflex/", target: "window" },
                 "Facebook"
               ),
-              " if this is of interest to you."
+              "."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Emily\u2019s belief is that #mamacan and with encouragement and direction we can all achieve what we want to achieve and be the best we can we."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Emily has founded One Social Mama (hence the name!), which is a Social Media Consultancy to help small to medium sized businesses to be the best they can be. One Social Mama offer a variety of social media support from audits, strategy development, bespoke workshops and 121's  to full social media management."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Emily believes in making things work as best as they can, whilst where possible using as less resource as possible, working to ensure maximum results.  Social media is a great example of this. Done well this can be a foundation of success for businesses, but done badly can be wasted and ineffective use of time and results."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "With an estimated new social media user every 15 seconds, Social Media is an area where One Social Mama can support clients to build their brand, build an engaged community and ultimately increase their customer base."
+            ),
+            _react2.default.createElement(
+              "p",
+              null,
+              "Social Media support means businesses can focus their efforts on what they do best, and being the best they can be."
             )
           )
         )
@@ -45743,71 +45773,97 @@ var HomeBody = function (_React$Component) {
             _react2.default.createElement(
               'h4',
               null,
-              'OneSocialMama provides the following services:'
+              'Social Media Consultancy and HR/Flexible working specialist'
             ),
             _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/services/' },
+              'div',
+              { id: 'servicesGrid' },
               _react2.default.createElement(
                 'div',
-                { id: 'servicesGrid' },
+                null,
                 _react2.default.createElement(
-                  'div',
-                  null,
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#audit' },
                   _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'gridIcon audit' },
                     _react2.default.createElement(
-                      'div',
-                      { className: 'gridIcon audit' },
-                      _react2.default.createElement(
-                        'span',
-                        null,
-                        'Audit'
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'gridIcon strategy' },
-                      _react2.default.createElement(
-                        'span',
-                        null,
-                        'Strategy Development'
-                      )
+                      'span',
+                      null,
+                      'Audit'
                     )
                   )
                 ),
                 _react2.default.createElement(
-                  'div',
-                  null,
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#strategy' },
                   _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'gridIcon strategy' },
                     _react2.default.createElement(
-                      'div',
-                      { className: 'gridIcon training' },
-                      _react2.default.createElement(
-                        'span',
-                        null,
-                        'Workshops & 121s'
-                      )
+                      'span',
+                      null,
+                      'Strategy Development'
                     )
-                  ),
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#workshop' },
                   _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'gridIcon training' },
                     _react2.default.createElement(
-                      'div',
-                      { className: 'gridIcon socialMediaManagement' },
-                      _react2.default.createElement(
-                        'span',
-                        null,
-                        'Social Media Management'
-                      )
+                      'span',
+                      null,
+                      'Workshops & 121s'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#sm-management' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'gridIcon socialMediaManagement' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'Social Media Management'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#workshop' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'gridIcon cv' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'CV, & Interview skills'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { className: 'service', to: '/services/#sm-management' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'gridIcon flexible' },
+                    _react2.default.createElement(
+                      'span',
+                      null,
+                      'Flexible working'
                     )
                   )
                 )
@@ -45933,13 +45989,14 @@ var ServicesPage = function (_React$Component) {
         _react2.default.createElement(
           "p",
           null,
-          "From audits and light touch support and guidance, full social media strategy and management, and bespoke training to suit your needs, we can tailor our packages to suit your individual needs."
+          "Please see below for the core packages offered by One Social Mama; we can tailor our packages to suit your individual needs. Please do get in touch if you have any questions."
         ),
         _react2.default.createElement(
           "p",
           null,
           "Our core packages are detailed below:"
         ),
+        _react2.default.createElement("a", { name: "audit" }),
         _react2.default.createElement(
           "h3",
           null,
@@ -45955,6 +46012,7 @@ var ServicesPage = function (_React$Component) {
           null,
           "This insight gives you a great view of what is working well, and what isn\u2019t working as well, to help you build your brand strategy and improve your performance."
         ),
+        _react2.default.createElement("a", { name: "strategy" }),
         _react2.default.createElement(
           "h3",
           null,
@@ -46033,6 +46091,46 @@ var ServicesPage = function (_React$Component) {
             null,
             "We can manage all your social media for you so you can get on with what you do best.  We understand to manage social media well takes time, and lets face it, there just aren\u2019t enough hours in the day!"
           )
+        ),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "CV and Interview Skills"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "For mums (and dads) returning to work after a period of time raising children, it can be daunting preparing to return to the workplace."
+        ),
+        _react2.default.createElement(
+          "h4",
+          null,
+          "CVs"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "We offer support with preparing and updating your cv, ensuring your cv is current, relevant and  shows off your true capability and potential. Your cv should also demonstrate how you match the requirements of your desired roles. We can also help with preparing a great covering letter, explaining your recent gap in employment, and your desire to return to work."
+        ),
+        _react2.default.createElement(
+          "h4",
+          null,
+          "Interview Skills"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "This can seem like one of the most daunting tasks after being out of work raising children! We can help prepare you for interviews ahead, help you understand what is required from you, prepare you in terms of likely questions and format of the interview, ensuring you feel confident and prepared, and ready to show off your very best self."
+        ),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Flexible working"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "For mums (and dad\u2019s) in employment, getting the right working hours can quite simply make the difference between being able to work or not. We can support you with making a flexible working request, understanding the different flexible working options available, how to put a thorough case forward to your employer, whilst supporting you in terms of flexible working legislation and policy."
         ),
         _react2.default.createElement(
           "p",
@@ -59623,7 +59721,7 @@ utils.intFromLE = intFromLE;
 /* 659 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve 'file' in '/Users/trevoreland/WebstormProjects/onesocialmama'\nBREAKING CHANGE: It's no longer allowed to omit the '-loader' suffix when using loaders.\n                 You need to specify 'file-loader' instead of 'file',\n                 see https://webpack.js.org/guides/migrating/#automatic-loader-module-name-extension-removed\n    at factoryCallback (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/lib/Compilation.js:264:39)\n    at factory (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/lib/NormalModuleFactory.js:247:20)\n    at resolver (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/lib/NormalModuleFactory.js:65:21)\n    at asyncLib.parallel (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/lib/NormalModuleFactory.js:202:22)\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:3874:9\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:1048:13)\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:958:16\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:3871:13\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:1126:9\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:1048:13)\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:958:16\n    at /Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/node_modules/async/dist/async.js:1123:13\n    at resolver.resolve.err2 (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/webpack/lib/NormalModuleFactory.js:270:7)\n    at onResolve (/Users/trevoreland/WebstormProjects/onesocialmama/node_modules/enhanced-resolve/lib/Resolver.js:70:11)");
 
 /***/ }),
 /* 660 */

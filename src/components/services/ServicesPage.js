@@ -6,7 +6,7 @@ class ServicesPage extends React.Component {
       <div className="container">
         <h2>Services</h2>
 
-        <p>From audits and light touch support and guidance, full social media strategy and management, and bespoke training to suit your needs, we can tailor our packages to suit your individual needs.</p>
+        <p>Please see below for the core packages offered by One Social Mama; we can tailor our packages to suit your individual needs. Please do get in touch if you have any questions.</p>
         <p>Our core packages are detailed below:</p>
 
         <a name="audit"></a>
@@ -35,6 +35,16 @@ class ServicesPage extends React.Component {
           <li>We can work with you to optimise your existing channels and ensure your social media is growing and achieving your objectives, whether this is to build brand awareness, an engaged community, website traffic or email sign ups.</li>
           <li>We can manage all your social media for you so you can get on with what you do best.  We understand to manage social media well takes time, and lets face it, there just aren’t enough hours in the day!</li>
         </ul>
+
+        <h3>CV and Interview Skills</h3>
+        <p>For mums (and dads) returning to work after a period of time raising children, it can be daunting preparing to return to the workplace.</p>
+        <h4>CVs</h4>
+        <p>We offer support with preparing and updating your cv, ensuring your cv is current, relevant and  shows off your true capability and potential. Your cv should also demonstrate how you match the requirements of your desired roles. We can also help with preparing a great covering letter, explaining your recent gap in employment, and your desire to return to work.</p>
+        <h4>Interview Skills</h4>
+        <p>This can seem like one of the most daunting tasks after being out of work raising children! We can help prepare you for interviews ahead, help you understand what is required from you, prepare you in terms of likely questions and format of the interview, ensuring you feel confident and prepared, and ready to show off your very best self.</p>
+
+        <h3>Flexible working</h3>
+        <p>For mums (and dad’s) in employment, getting the right working hours can quite simply make the difference between being able to work or not. We can support you with making a flexible working request, understanding the different flexible working options available, how to put a thorough case forward to your employer, whilst supporting you in terms of flexible working legislation and policy.</p>
         <p>For further information please do get in touch.</p>
       </div>
     );

@@ -18,6 +18,17 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 // create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
 
+
+function ignoreFavicon(req, res, next) {
+  if (req.originalUrl.indexOf('/favicon')>-1) {
+    res.status(204).json({nope: true});
+  } else {
+    next();
+  }
+}
+
+app.use(ignoreFavicon);
+
 app.post('/send-contact', urlencodedParser, (req, res) => {
 
   if (!req.body) return res.sendStatus(400);

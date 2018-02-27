@@ -6,6 +6,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production')
 }
+
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 export default {
   //debug: true,
   devtool: 'source-map',
@@ -21,6 +24,8 @@ export default {
     contentBase: path.resolve(__dirname, 'dist')
   },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   favicon: 'src/favicon.ico'}),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS),
     new ExtractTextPlugin('public/styles.css'),
@@ -39,7 +44,8 @@ export default {
       {test: /\.json$/, loader: 'json-loader'},
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel-loader']},
       {test: /(\.css)$/, loaders: ['style-loader', 'css-loader']},
-      { test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+      //{ test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+      {test: /\.(jpe?g|png|gif|ico)$/i, loader: 'file?name=[name].[ext]'},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
       {test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
