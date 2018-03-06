@@ -1,3 +1,4 @@
 node_modules/
 tools/mailer/config/
 readme.txt
+dist/
