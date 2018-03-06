@@ -12,6 +12,7 @@ const HomeBanner = (props) => {
         </div>
       </div>
     </div>
+
   );
 };
 

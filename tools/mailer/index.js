@@ -17,8 +17,8 @@ const transporter =  nodemailer.createTransport({
 const send = ({ email, name, text }) => {
 
   const message = {
-    from: 'onesocialmama@outlook.com',
-    to: 'onesocialmama@outlook.com',
+    from: email,
+    to: config.email,
     subject: `New message from ${name} on onesocialmama.com`,
     text
   };

@@ -9,12 +9,17 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      
+
     };
-    
+
   }
+
+  componentDidUpdate() {
+    window.scrollTo(0,0);
+  }
+
   render() {
-    
+
     return (
        <div>
         <Header navData={navData} mediaLinksData={mediaLinksData} affiliateLinksData={affiliateLinksData}/>
@@ -22,7 +27,7 @@ class App extends React.Component {
         <Footer navData={navData} mediaLinksData={mediaLinksData}/>
         </div>
     );
-      
+
   }
 }
 

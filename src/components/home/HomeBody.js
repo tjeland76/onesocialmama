@@ -21,7 +21,7 @@ class HomeBody extends React.Component {
         <div className="bodyHomeContainer">
           <div className="homePanel">
             <h1>Be the best you can be.</h1>
-            <h4>Social Media Consultancy and HR/Flexible working specialist</h4>
+            <h4>Social Media and HR Consultancy</h4>
 
             <div id="servicesGrid">
               <div>
@@ -42,7 +42,7 @@ class HomeBody extends React.Component {
               </div>
               <div>
                 <NavLink className="service" to="/services/#workshop">
-                  <div className="gridIcon cv"><span>CV, & Interview skills</span></div>
+                  <div className="gridIcon cv"><span>CV and Interview</span></div>
                 </NavLink>
                 <NavLink className="service" to="/services/#sm-management">
                   <div className="gridIcon flexible"><span>Flexible working</span></div>

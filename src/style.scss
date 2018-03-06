@@ -171,7 +171,7 @@ input[type=text], textarea.form-control {
             background-size: 50px auto;
           }
           &.cv {
-            background-image: url("images/cv transparent.png");
+            background-image: url("images/cv.png");
             background-size: 58px auto;
           }
           &.flexible {
@@ -220,6 +220,35 @@ main {
       vertical-align: middle;
       .bannerLabel {
         color:$linen;
+        margin-top: 5px;
+      }
+      .mediaLinks {
+        display:table;
+        width:225px;
+        margin-top: 20px;
+        a {
+          width:50px;
+          height:50px;
+          background-size:100% 100%;
+        }
+      }
+    }
+  }
+}
+
+.homeTestimonial {
+  background-color: $raisin;
+  height: 200px;
+  .container {
+    display: table;
+    height: 200px;
+    > div {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      .bannerLabel {
+        color:$linen;
+        font-style: italic;
         margin-top: 5px;
       }
       .mediaLinks {

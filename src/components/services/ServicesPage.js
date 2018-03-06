@@ -11,8 +11,14 @@ class ServicesPage extends React.Component {
 
         <a name="audit"></a>
         <h3>Audit</h3>
-        <p>For small to medium sized businesses who would benefit from a review on how they can improve their social media channels, and confirm areas which are performing well versus those that need improvements. This would include both a platform review, including brand, tone, content, successes and improvement areas; and an analytics review showing which posts are both engaging and value add, and why.</p>
-        <p>This insight gives you a great view of what is working well, and what isn’t working as well, to help you build your brand strategy and improve your performance.</p>
+        <p>For businesses who would benefit from a review on how they can improve their social media channels, and confirm areas which are performing well versus those that need improvements.</p>
+        <p>This would include:</p>
+        <ul>
+          <li>a platform review;  reviewing brand, tone, content, consistency,</li>
+          <li>analytics insights; looking at impressions/reach, engagement, audience, gender and hashtags,</li>
+          <li>posting insight; reflecting on your data to understand optimum posting times, content, tone, style, and subject matter.</li>
+        </ul>
+        <p>This is really useful insight which ensures you refine your activity for the highest engagement, and to ensure you aren’t wasting your time.</p>
 
         <a name="strategy"></a>
         <h3>Strategy Development</h3>
@@ -40,12 +46,12 @@ class ServicesPage extends React.Component {
         <p>For mums (and dads) returning to work after a period of time raising children, it can be daunting preparing to return to the workplace.</p>
         <h4>CVs</h4>
         <p>We offer support with preparing and updating your cv, ensuring your cv is current, relevant and  shows off your true capability and potential. Your cv should also demonstrate how you match the requirements of your desired roles. We can also help with preparing a great covering letter, explaining your recent gap in employment, and your desire to return to work.</p>
-        <h4>Interview Skills</h4>
+        <h4>Interview Support and Training</h4>
         <p>This can seem like one of the most daunting tasks after being out of work raising children! We can help prepare you for interviews ahead, help you understand what is required from you, prepare you in terms of likely questions and format of the interview, ensuring you feel confident and prepared, and ready to show off your very best self.</p>
 
         <h3>Flexible working</h3>
         <p>For mums (and dad’s) in employment, getting the right working hours can quite simply make the difference between being able to work or not. We can support you with making a flexible working request, understanding the different flexible working options available, how to put a thorough case forward to your employer, whilst supporting you in terms of flexible working legislation and policy.</p>
-        <p>For further information please do get in touch.</p>
+        <p>For all other HR related enquiries please get in touch for a more detailed discussion on how you can best be supported</p>
       </div>
     );
   }
