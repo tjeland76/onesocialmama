@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 export default {
     //debug: true,
@@ -25,6 +25,14 @@ export default {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
+      new HtmlWebpackPlugin({
+        template: 'src/index.html',
+        favicon: 'src/favicon.ico',
+        inject: true,
+        // Note that you can add custom options here if you need to handle other custom logic in index.html
+        // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
+        trackJSToken: ''
+      }),
         new ExtractTextPlugin({filename: 'public/styles.css', allChunks: true})
     ],
     node: {

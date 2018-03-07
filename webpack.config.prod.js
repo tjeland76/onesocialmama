@@ -42,13 +42,20 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: false,
+      inject: true,
       // Note that you can add custom options here if you need to handle other custom logic in index.html
       // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
       trackJSToken: ''
     }),
     new ExtractTextPlugin('public/styles.css'),
-    new UglifyJsPlugin()
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        mangle: {
+          safari10: true,
+        },
+        safari10: false
+      }
+    })
     //new ExtractTextPlugin({filename: 'public/style.css', allChunks: true})
   ],
   node: {
