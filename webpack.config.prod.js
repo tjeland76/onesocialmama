@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production')
@@ -55,7 +56,15 @@ export default {
         },
         safari10: false
       }
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: 'src/robots.txt'
+      },
+      {
+        from: 'src/sitemap.xml'
+      },{
+        from: 'src/google7a78dba6037d73cb.html'
+      }])
     //new ExtractTextPlugin({filename: 'public/style.css', allChunks: true})
   ],
   node: {

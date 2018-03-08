@@ -26,7 +26,8 @@ var urlencodedParser = bodyParser.urlencoded({ extended: true });
 function ignoreFavicon(req, res, next) {
   if (req.originalUrl.indexOf('/favicon')>-1) {
     res.status(204).json({nope: true});
-  } else {
+  }
+  else {
     next();
   }
 }
