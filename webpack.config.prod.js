@@ -2,13 +2,13 @@ import webpack from 'webpack';
 import path from 'path';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production')
-}
+};
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 export default {
@@ -52,7 +52,7 @@ export default {
     new UglifyJsPlugin({
       uglifyOptions: {
         mangle: {
-          safari10: true,
+          safari10: true
         },
         safari10: false
       }
@@ -77,8 +77,8 @@ export default {
   module: {
     loaders: [
       {test: /\.json$/, loader: 'json-loader'},
-      {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel-loader']},
-      {test: /(\.css)$/, loaders: ['style-loader', 'css-loader']},
+      {test: /\.js$/, include: [path.join(__dirname, 'src'),path.join(__dirname, 'node_modules/nodemailer')], loaders: ['babel-loader']},
+      {test: /(\.css)$/, loader: 'css-loader'},
       { test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
       //{test: /\.(jpe?g|png|gif|ico)$/i, loader: 'file?name=[name].[ext]'},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},

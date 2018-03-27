@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 export default {
     //debug: true,
@@ -25,14 +25,14 @@ export default {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-      new HtmlWebpackPlugin({
-        template: 'src/index.html',
-        favicon: 'src/favicon.ico',
-        inject: true,
-        // Note that you can add custom options here if you need to handle other custom logic in index.html
-        // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
-        trackJSToken: ''
-      }),
+        new HtmlWebpackPlugin({
+          template: 'src/index.html',
+          favicon: 'src/favicon.ico',
+          inject: true,
+          // Note that you can add custom options here if you need to handle other custom logic in index.html
+          // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
+          trackJSToken: ''
+        }),
         new ExtractTextPlugin({filename: 'public/styles.css', allChunks: true})
     ],
     node: {
@@ -45,7 +45,7 @@ export default {
     module: {
         loaders: [
             {test: /\.json$/, loader: 'json-loader'},
-            {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel-loader']},
+            {test: /\.js$/, include: [path.join(__dirname, 'src'),path.join(__dirname, 'node_modules/nodemailer')], loaders: ['babel-loader']},
             {test: /(\.css)$/, loaders: ['style-loader', 'css-loader']},
             { test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
             {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
